@@ -1,0 +1,9 @@
+services:
+  iis:
+    build:
+      context: .
+    ports:
+      - 8000:80
+    volumes:
+      # local directory : mount directory : (read/write)
+      - c:\users\foobar\projects\iis-docker-on-mac\src:c:\website:rw
